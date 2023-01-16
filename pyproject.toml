@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "learning-python"
+version = "1.0"
+description = ""
+authors = ["Sergey <sergeymaksheev@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "learning_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.15.10"
+mypy = "^0.991"
+black = {version = "^23.1a1", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
