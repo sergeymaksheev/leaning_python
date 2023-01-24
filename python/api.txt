@@ -1,0 +1,20 @@
+Пример запроса Curl
+
+curl -X POST \
+    -H 'Content-Type: application/json' \
+    -d '{"jsonrpc":"2.0","id":1,"method":"echo","params":{"text": "Hello, World!"}}' \
+    http://localhost:8080/rpc
+    
+    
+    
+    
+    curl -X POST \
+    -H 'Content-Type: application/json' \
+    -d '{"jsonrpc":"2.0","id":1,"method":"greet","params":{"name": "Tota"}}' \
+    http://localhost:8080/json-rpc
+    
+    
+
+
+    
+    
