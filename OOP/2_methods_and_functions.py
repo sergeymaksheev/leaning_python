@@ -14,7 +14,7 @@ class Car:
         )  # В реальной практике необходимо использование декоратора staticmethod
 
 
-print(Car.__dict__)
+Car.__dict__
 Car.drive()  # Обращение к функции через класс
 
 getattr(Car, "drive")()  # Вызов данной функции через функцию getattr()
